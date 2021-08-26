@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-#!/bin/bash
-gcc -S -masm=intel 101-quote.c
-=======
 #!/bin/bash 
 gcc -S -masm=intel $CFILE
->>>>>>> ce0cfd730c54d5c4cb3ce6d653c036e6da5810e8
+
