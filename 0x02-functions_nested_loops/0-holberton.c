@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 /**
  *main - entry point.
@@ -7,10 +8,11 @@
 int main(void)
 {
 char *text = "Holberton";
+char space='\n';  
 int i;
-for (i = 0; i < 10; i++)
+for (i = 0; i < 9; i++)
 {
-_putchar(text[i]);
+write(1, &space, 1);
 }
 
 return (0);
