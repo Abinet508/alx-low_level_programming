@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-char *text = "Holberton\n";
+char *text = "Holberton";
 int i;
 for (i = 0; i < 10; i++)
 {
