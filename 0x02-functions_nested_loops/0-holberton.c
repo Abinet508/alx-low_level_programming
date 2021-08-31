@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-char *text = "Holberton";
-char space='\n';  
+char *j = "Holberton";
+char space='\n';
 int i;
-for (i = 0; i < 9; i++)
+for (i = 0; i < 10; i++)
 {
-write(1, &space, 1);
+_putchar(j[i]);
 }
-
+write(1, &space, 1);
 return (0);
 }
