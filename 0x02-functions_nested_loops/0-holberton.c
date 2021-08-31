@@ -7,12 +7,15 @@
  */
 int main(void)
 {
-char text[9] = "Holberton";
-int i;
-for (i = 0; i < 9; i++)
-{
-_putchar(text[i]);
-}
-_putchar('\n');  
-return (0);
+	int i = 0;
+	char c;
+	char s[] = "Holberton\n";
+
+	while (i <= 9)
+	{
+		c = s[i];
+		_putchar(c);
+		i++;
+	}
+	return (0);
 }
