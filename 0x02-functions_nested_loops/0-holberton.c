@@ -12,6 +12,6 @@ for (i = 0; i <= 8; i++)
 {
 _putchar(j[i]);
 }
-_putchar('\n');
+_putchar(10);
 return (0);
 }
