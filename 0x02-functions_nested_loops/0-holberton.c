@@ -8,12 +8,11 @@
 int main(void)
 {
 char *j = "Holberton";
-char space= '\n';
 int i;
 for (i = 0; i < 10; i++)
 {
 _putchar(j[i]);
 }
-write(1, &space, 1);
+_putchar('\n');
 return (0);
 }
