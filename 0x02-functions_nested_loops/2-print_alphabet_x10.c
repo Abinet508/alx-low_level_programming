@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  *print_alphabet_x10 - print alpha x10
  *@void: no arguments.
