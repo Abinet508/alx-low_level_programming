@@ -7,15 +7,11 @@
  */
 int main(void)
 {
-int i = 0;
-char c;
-char s[] = "Holberton";
-
-while (i <= 9)
+char text[9] = "Holberton";
+int i;
+for (i = 0; i < 9; i++)
 {
-	c = s[i];
-	_putchar(c);
-	i++;
+_putchar(text[i]);
 }
 _putchar('\n');
 return (0);
