@@ -8,7 +8,7 @@
 int main(void)
 {
 char *j = "Holberton";
-char space='\n';
+char space= '\n';
 int i;
 for (i = 0; i < 10; i++)
 {
