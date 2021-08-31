@@ -12,5 +12,5 @@
 ## 3-print_remainning_days.c
 > Fixed the ``` print_remainig _days() ``` function so that the output works correctly fo all dates and all leap years.
 
-``` holberton.h ```
+``` main.h ```
 > contains function prototypes used in this project.
