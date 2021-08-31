@@ -1,3 +1,9 @@
+#include <stdio.h>
+/**
+ *main - print first 98 fibonacci
+ *
+ *Return: 0 always.
+ */
 int main(void)
 {
 unsigned long int a = 1, b = 2, c, k, p, l, o, m, u, d, i;
