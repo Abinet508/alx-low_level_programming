@@ -12,6 +12,5 @@ for (i = 0; i < 9; i++)
 {
 _putchar(text[i]);
 }
-_putchar(10);
 return (0);
 }
