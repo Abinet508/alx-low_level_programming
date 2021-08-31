@@ -1,20 +1,17 @@
 #include "main.h"
-
 /**
- * main - Prints "Holberton" followed by a new line.
- *
- * Return: Always 0.
+ *main - entry point.
+ *Description: program starts and ends here.
+ *Return: 0 on success.
  */
 int main(void)
 {
-_putchar('H');
-_putchar('o');
-_putchar('l');
-_putchar('b');
-_putchar('e');
-_putchar('r');
-_putchar('t');
-_putchar('o');
-_putchar('n');
+char text[9] = "Holberton";
+int i;
+for (i = 0; i < 9; i++)
+{
+_putchar(text[i]);
+}
 _putchar('\n');
+return (0);
 }
