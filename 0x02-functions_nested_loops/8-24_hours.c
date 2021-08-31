@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  *jack_bauer -  count down 24hrs
  *
