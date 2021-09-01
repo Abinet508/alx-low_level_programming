@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int c;
+	int c=0;
 	char holberton[10] = "Holberton\n";
 
 	while (c < 10)
