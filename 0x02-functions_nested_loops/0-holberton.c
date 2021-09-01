@@ -14,7 +14,5 @@ int main(void)
 		_putchar(holberton[i]);
 		i++;
 	}
-	_putchar('\n');
-
 	return (0);
 }
