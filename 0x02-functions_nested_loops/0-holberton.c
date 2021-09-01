@@ -7,7 +7,7 @@
 int main(void)
 {
 	int c=0;
-	char holberton[10] = "Holberton\n";
+	char holberton[10] = "_putchar\n";
 
 	while (c < 10)
 	{
