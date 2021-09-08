@@ -21,11 +21,11 @@
 ``` ADVANCED ```
 ## 101-print_number.c
 > A function that prints an integer.
-##102-magic.c
+## 102-magic.c
 >A function that prints a[2] = 98 instead of 1024.
-##103-infinite_add.c
+## 103-infinite_add.c
 >A function that adds two numbers.
-##104-print_buffer.c
+## 104-print_buffer.c
 >A function that prints a buffer.
 ## main.h
 > Header file containing function prototypes.
