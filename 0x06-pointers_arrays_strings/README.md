@@ -16,10 +16,16 @@
 > A function that capitalizes all words of a string.
 ## 7-leet.c
 > A function that encodes a string into ``` 1337 ```.
-## 8-rot13.c
+## 100-rot13.c
 > A function that encodes a string using ``` rot13 ```.
 ``` ADVANCED ```
-## 100-print_number.c
+## 101-print_number.c
 > A function that prints an integer.
+##102-magic.c
+>A function that prints a[2] = 98 instead of 1024.
+##103-infinite_add.c
+>A function that adds two numbers.
+##104-print_buffer.c
+>A function that prints a buffer.
 ## main.h
 > Header file containing function prototypes.
