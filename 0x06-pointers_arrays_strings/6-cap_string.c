@@ -20,10 +20,10 @@ char *cap_string(char *s)
 			s[0] = s[0] - 32;
 		}
 		if (s[count] == ' ' || s[count] == '\t' || s[count] == '\n'
-		    || s[count] == ',' || s[count] == ';' || s[count] == '.'
-		    || s[count] == '.' || s[count] == '!' || s[count] == '?'
-		    || s[count] == '"' || s[count] == '(' || s[count] == ')'
-		    || s[count] == '{' || s[count] == '}')
+		    || s[count] == ',' || s[count] == ';' || s[count] == '.' 
+			|| s[count] == '!' || s[count] == '?'|| s[count] == '"' 
+			|| s[count] == '(' || s[count] == ')'|| s[count] == '{' 
+			|| s[count] == '}')
 		{
 			if (s[count + 1] >= 97 && s[count + 1] <= 122)
 			{
@@ -33,4 +33,14 @@ char *cap_string(char *s)
 		count++;
 	}
 	return (s);
+}
+int main(void)
+{
+    char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+    char *ptr;
+
+    ptr = cap_string(str);
+    printf("%s", ptr);
+    printf("%s", str);
+    return (0);
 }
