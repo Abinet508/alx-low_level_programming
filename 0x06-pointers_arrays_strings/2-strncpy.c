@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *_strncpy - a function that copies a string.
  *at most n bytes of src are copied.
