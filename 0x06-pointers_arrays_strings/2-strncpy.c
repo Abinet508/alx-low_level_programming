@@ -17,8 +17,10 @@ for (byteCount = 0; byteCount < n && src[byteCount] != '\0'; byteCount++)
 {
 dest[byteCount] = src[byteCount];
 }
-for (; byteCount < n; byteCount++){
+while(byteCount < n)  
+{
 dest[byteCount] = '\0';
+byteCount++;
 }
 return (dest);
 }
