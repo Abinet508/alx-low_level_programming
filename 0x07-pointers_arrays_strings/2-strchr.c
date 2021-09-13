@@ -19,6 +19,10 @@ char *_strchr(char *s, char c)
 			p = &s[counter];
 			break;
 		}
+		else
+		{
+		p=NULL;
+		}
 	}
 	if (s[counter] == c)
 	{
