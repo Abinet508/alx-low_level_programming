@@ -9,20 +9,8 @@
   */
 char *_strchr(char *s, char c)
 {
-	char *p; /* pointer to char*/
-	int counter;
-
-	for (counter = 0; s[counter] != '\0'; counter++)
-	{
-		if (s[counter] == c)
-		{
-			p = &s[counter];
-			break;
-		}
-	}
-	if (s[counter] == c)
-	{
-		p = &s[counter];
-	}
-	return (p);
+	while (*s != c)
+		if (!*s++)
+			return (0);
+	return (s);
 }
