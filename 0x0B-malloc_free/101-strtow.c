@@ -1,5 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
+/**
+ * wordnos - counts no of words in a given string
+ * @str: pointer to the string
+ *
+ * Return: No. of words in the string (int)
+ */
 int wordnos(char *s)
 {
 	int flag, c, w;
