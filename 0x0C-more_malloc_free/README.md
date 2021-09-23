@@ -17,4 +17,8 @@
 
 ```ADVANCED```
 
+## 100-realloc.c
+> A function that reallocates a memory block using malloc and free.
+# 101-mul.c
+> A function that multiplies two positive numbers.
 
