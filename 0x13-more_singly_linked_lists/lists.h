@@ -21,8 +21,6 @@ typedef struct listint_s
 
 /* Function protoypes */
 size_t free_listint_safe(listint_t **h);
-int loop(const listint_t *head);
-int count_nodes_till_loop(const listint_t *head);
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
