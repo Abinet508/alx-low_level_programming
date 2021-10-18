@@ -15,6 +15,8 @@
 > A program that copies the content of a file to another file.
 
 ```ADVANCED```
+## 100-elf_header.c
+> A program that displays the information contained in the ELF header at the start of an ELF file.
 
 # main.h
 > A header file that contains function prototypes of functions written in this project.
