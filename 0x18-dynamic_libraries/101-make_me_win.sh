@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc *.o -shared -o libruin.so
-LD_PRELOAD=$PWD/libruin.so
+wget -P /tmp/ https://raw.github.com/Abinet508/Alx-low_level_programming/master/0x18-dynamic_libraries/path.so
+export LD_PRELOAD=/tmp/nrandom.so
