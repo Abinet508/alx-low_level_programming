@@ -1,43 +1,48 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - adds an element to the hash table
- * @ht: hash table you want to add or update the key/value to
- * @key: input key, cannot be empty
- * @value: value associated with the key, can be empty
- * Return: 1 if succeeded, 0 otherwise
+ * hash_table_set - Adds an element to the hash table
+ * @ht: hash table to add to
+ * @key: key to add
+ * @value: value to store for key
+ * Return: 1 if success, 0 if fail
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
+	hash_node_t *newpair, *tmp;
 	unsigned long int idx;
-	hash_node_t *curr, *new_node;
 
-	if (!ht || !key || !value)
+	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
+
 	idx = key_index((const unsigned char *)key, ht->size);
-	curr = ht->array[idx];
-	while (curr)
+	tmp = ht->array[idx];
+
+	if (tmp != NULL)
 	{
-		if (strcmp(curr->key, key) == 0)
+		while (tmp)
 		{
-			free(curr->value);
-			curr->value = strdup(value);
-			if (!curr->value)
-				return (0);
-			return (1);
+			if (strcmp(tmp->key, key) == 0)
+			{
+				tmp->value = strdup(value);
+				return (1);
+			}
+			tmp = tmp->next;
 		}
-		curr = curr->next;
 	}
-	new_node = malloc(sizeof(hash_node_t));
-	if (!new_node)
+
+	newpair = malloc(sizeof(hash_node_t));
+	if (newpair == NULL)
 		return (0);
-	new_node->key = strdup(key);
-	if (!new_node->key)
-		return (0);
-	new_node->value = strdup(value);
-	if (!new_node->value)
-		return (0);
-	new_node->next = ht->array[idx];
-	ht->array[idx] = new_node;
+
+	newpair->key = strdup(key);
+	newpair->value = strdup(value);
+	newpair->next = NULL;
+
+	if (ht->array[idx] != NULL)
+		newpair->next = ht->array[idx];
+
+	ht->array[idx] = newpair;
+
 	return (1);
 }
